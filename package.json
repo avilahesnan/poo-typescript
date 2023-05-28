@@ -1,0 +1,23 @@
+{
+  "name": "poo-typescript",
+  "version": "1.0.0",
+  "description": "Projeto para o aprendizado de POO, usando a linguagem TypeScript em um ambiente de execução NODE.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "POO",
+    "TypeScript",
+    "NODE.js",
+    "IFS"
+  ],
+  "author": "Hesnan Avila",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "sucrase": "^3.32.0",
+    "typescript": "^5.0.4"
+  }
+}
