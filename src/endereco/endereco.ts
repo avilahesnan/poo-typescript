@@ -70,5 +70,4 @@ export class Endereco {
         this.estado = estado;
         this.CEP = CEP;
     }
-
 }

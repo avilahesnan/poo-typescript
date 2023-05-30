@@ -5,6 +5,7 @@ export class Nota {
     public get valor(): number {
         return this._valor;
     }
+    
     public set valor(value: number) {
         this._valor = value;
     }
@@ -12,6 +13,7 @@ export class Nota {
     public get peso(): number {
         return this._peso;
     }
+
     public set peso(value: number) {
         this._peso = value;
     }

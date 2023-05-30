@@ -8,6 +8,7 @@ export class Disciplina {
     public get nome(): string {
         return this._nome;
     }
+    
     public set nome(value: string) {
         this._nome = value;
     }
@@ -15,6 +16,7 @@ export class Disciplina {
     public get cargahoraria(): number {
         return this._cargahoraria;
     }
+
     public set cargahoraria(value: number) {
         this._cargahoraria = value;
     }
@@ -22,6 +24,7 @@ export class Disciplina {
     public get notas(): Nota[] {
         return this._notas;
     }
+
     public set notas(value: Nota[]) {
         this._notas = value;
     }

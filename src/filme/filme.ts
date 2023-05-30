@@ -54,5 +54,4 @@ export class Filme {
             return (`Você não tem permissão para assistir esse filme`);
         }
     }
-
 }
