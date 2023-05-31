@@ -26,7 +26,12 @@ export class Disciplina {
     }
 
     public set notas(value: Nota[]) {
-        this._notas = value;
+        if(1 > Nota.length || 5 < Nota.length) {
+            throw Error(`As disciplinas devem ter pelo menos uma nota e no máximo 5`);
+        }
+        else {
+            this._notas = value;
+        }
     }
 
     constructor(nome: string, cargaHoraria: number) {
