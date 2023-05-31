@@ -55,6 +55,25 @@ export class Aluno extends Pessoa{
         console.log(`Isso é uma submissão de projeto de extensão de aluno`);
     }
 
+    public getMediaGeral(ponderada: boolean): number {
+        if (ponderada == true) {
+            let mediaG: number = 0;
+            let somaG: number = 0;
+            this.disciplinas.forEach(media => {
+                somaG += media.getMediaPonderada();
+            });
+            return mediaG = somaG / this.disciplinas.length;
+        }
+        else {
+            let mediaG: number = 0;
+            let somaG: number = 0;
+            this.disciplinas.forEach(media => {
+                somaG += media.getMediaAritmetica();
+            });
+            return mediaG = somaG / this.disciplinas.length;
+        }
+    }
+
     protected getMatricula(): number {
         let ano: number = new Date().getFullYear();
         let numero: number = Math.floor(Math.random() * (9999 - 1000 + 1) + 1000 );
