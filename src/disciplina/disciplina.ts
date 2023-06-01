@@ -26,8 +26,8 @@ export class Disciplina {
     }
 
     public set notas(value: Nota[]) {
-        if(1 > Nota.length || 5 < Nota.length) {
-            throw Error(`As disciplinas devem ter pelo menos uma nota e no máximo 5`);
+        if(1 > value.length || value.length > 5) {
+            throw new Error(`As disciplinas devem ter pelo menos uma nota e no máximo 5`);
         }
         else {
             this._notas = value;
